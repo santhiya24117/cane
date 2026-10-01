@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soft-blush: #F6EDE8;
+  --color-deep-plum: #24131F;
+  --color-aubergine: #38202F;
+  --color-guava-pink: #E86A78;
+  --color-apricot: #F4A261;
+  --color-pistachio: #B8C98A;
+  --color-ivory: #FFF9F5;
+  --color-dusty-plum: #78636D;
+
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #24131F;
+  background-color: #F6EDE8;
+}
+
+.font-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EDE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #78636D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #24131F;
+}
+
+/* Custom marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Tabular numbers for price alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

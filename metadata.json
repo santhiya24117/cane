@@ -1,0 +1,6 @@
+{
+  "name": "CANE — Fresh Sugarcane & Cold Pressed Beverages",
+  "description": "Premium fresh sugarcane juices, fruit-infused cane drinks, and cold-pressed elixirs in Kollam, Kerala.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
